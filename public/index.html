@@ -12,6 +12,7 @@
  
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="stylesheet" href="./css/reset.css">
+
     <script>
      (function(win, lib) {
      var doc = win.document;
@@ -140,3 +141,11 @@
 
   </body>
 </html>
+<script src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+<script>
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
+</script>

@@ -1,13 +1,23 @@
 const proxy = require('http-proxy-middleware');
 
-module.exports = function(app) {
-  app.use(proxy('/api', { 
-    target: 'https://www.baidu.com',
+module.exports = (app)=>{
+  app.use(proxy('/app', { 
+    target: 'http://www.0quan8.com',
+    ws: true,
     changeOrigin: true,
-    pathRewrite: {
-      '^/api': ''
+        pathRewrite: {
+      '^/app': ''
     }
   }));
-// 多接口就再复制
+  app.use(proxy('/api', { 
+    target: 'http://cmsjapi.dataoke.com',
+    changeOrigin: true,
+    pathRewrite: {
+  '^/api': ''
+    }
+  }));
+
 
 };
+
+

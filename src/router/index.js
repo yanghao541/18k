@@ -1,4 +1,4 @@
-import {Home,Login,Nian} from "@views"
+import {Home,Login,Nian,List} from "@views"
 
 export const TabBarRoute=[
     {
@@ -19,10 +19,16 @@ export const TabBarRoute=[
         meta:{flag:true},
         name:"登录"
     },
+ 
 
 ]
 export const notabBarRoute=[
-
+   {
+        path:"/list/:id",
+        component:List,
+        meta:{flag:false},
+        name:"登录"
+    },
 ]
 
 

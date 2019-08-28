@@ -16,4 +16,9 @@ const Nian=Loadable({
     loading:Loading
 })
 
-export {Home,Login,Nian}
+const List=Loadable({
+    loader:()=>import("./list"),
+    loading:Loading
+})
+
+export {Home,Login,Nian,List}
