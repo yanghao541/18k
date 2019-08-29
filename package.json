@@ -1,14 +1,10 @@
 {
-  "name": "yh",
+  "name": "flgproject",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "babel-plugin-import": "^1.12.0",
-    "customize-cra": "^0.5.0",
-    "http-proxy-middleware": "^0.19.1",
     "qs": "^6.8.0",
     "react": "^16.9.0",
-    "react-app-rewired": "^2.1.3",
     "react-dom": "^16.9.0",
     "react-loadable": "^5.5.0",
     "react-redux": "^7.1.0",
@@ -42,6 +38,9 @@
     ]
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.12.0"
+    "babel-plugin-import": "^1.12.0",
+    "customize-cra": "^0.5.0",
+    "http-proxy-middleware": "^0.19.1",
+    "react-app-rewired": "^2.1.3"
   }
 }
