@@ -1,34 +1,39 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const TabBarcss=styled.div`
+
+export const TabBarWrapper = styled.div`
     width:100%;
     height:1rem;
     position:fixed;
     left:0;
     bottom:0;
-    border-top:1px solid #cc;
+    border-top:1px solid #ccc;
     background:#fff;
     ul{
         width:100%;
         height:100%;
         display:flex;
-        justify-conten:space-betwen        
+        justify-content:space-between;
         li{
             width:100%;
-            height:100%;  
+            height:100%;
         }
-        a{  font-size:.3rem;
-            color:black;
+        a{
             width:100%;
-            height:100%; 
+            height:100%;
             display:flex;
+            flex-direction: column;
             justify-content:center;
-            flex-direction:colum;
-            align-items:center;      
+            align-items:center;
+        }
+        i{
+            font-size:.4rem;
+        }
+        span{
+            font-size:.3rem;
         }
         .active{
             color:#c33;
         }
     }
-
 `

@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from 'react'
-
-export default class Home extends Component {
-    render() {
-        return (
-            <div>
-                首页
-            </div>
-        )
-    }
-}
-=======
 import React, { Component, Fragment } from 'react'
 import { two } from "@api/yh"
 import { Tou } from "./style"
@@ -112,5 +99,3 @@ export default connect(mapStateToProps, mapDispatch)(Home)
 
 
 
-
->>>>>>> 6ccfe8679eef7087608f82c8aeb1a085629ac24a

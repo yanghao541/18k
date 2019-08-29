@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { routeConfig } from "@router"
-import { Switch, Redirect } from "react-router-dom";
+import { Switch, Redirect,Route} from "react-router-dom";
 import Trouter from "@common/Trouter"
 export default class App extends Component {
   render() {
@@ -17,6 +17,3 @@ export default class App extends Component {
     )
   }
 }
-
-
-

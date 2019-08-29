@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Hometu extends Component {
+export default class Collection extends Component {
     render() {
         return (
             <div>
-                
+                Collection
             </div>
         )
     }

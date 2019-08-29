@@ -6,10 +6,6 @@ const Home=Loadable({
     loading:Loading
 })
 
-const Login=Loadable({
-    loader:()=>import("./login"),
-    loading:Loading
-})
 
 const Nian=Loadable({
     loader:()=>import("./nian"),
@@ -29,4 +25,4 @@ const Price=Loadable({
     loader:()=>import("./price"),
     loading:Loading
 })
-export {Home,Login,Nian,List,Search,Price}
+export {Home,Nian,List,Search,Price}

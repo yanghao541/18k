@@ -1,4 +1,13 @@
-import {Home,Login,Nian,List,Search,Price} from "@views"
+import {Home,Nian,List,Search,Price} from "@views"
+
+import {
+    Sort,
+    Mine,
+    Collection,
+    List2,
+    Login
+} from '@pages' 
+
 
 export const TabBarRoute=[
     {
@@ -14,15 +23,53 @@ export const TabBarRoute=[
         name:"9.9"
     },
     {
-        path:"/login",
-        component:Login,
-        meta:{flag:true},
-        name:"登录"
+        path:"/sort",
+        component:Sort,
+        meta:{
+            flag:true
+        },
+        name:'分类',
+        icon:"\ue7f9"
     },
- 
+    {
+        path:"/collection",
+        component:Collection,
+        meta:{
+            flag:true
+        },
+        name:'收藏',
+        icon:"\ue60f"
+    },
+    {
+        path:"/mine",
+        component:Mine,
+        meta:{
+            flag:true
+        },
+        name:'我的',
+        icon:"\ue610"
+    },
 
+ 
+    
 ]
 export const notabBarRoute=[
+    {
+        path:'/list',
+        component:List2,
+        meta:{
+            flge:false
+        },
+        name:"列表"
+    },
+    {
+        path:'/login',
+        component:Login,
+        meta:{
+            flge:false
+        },
+        name:"登录"
+    },
    {
         path:"/list/:id",
         component:List,
@@ -43,6 +90,7 @@ export const notabBarRoute=[
     },  
 ]
 
-
 export const routeConfig=TabBarRoute.concat(notabBarRoute)
+
+
 

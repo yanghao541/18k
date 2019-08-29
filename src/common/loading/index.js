@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import "./index.css";
 export default class Loading extends Component {
-    render() {
+
+    render(){
         return (
             <figure>
                 <div className="dot white"></div>
@@ -13,3 +14,4 @@ export default class Loading extends Component {
         )
     }
 }
+
