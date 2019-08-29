@@ -8,5 +8,5 @@ export const Page = styled.div`
     right:0;
     padding-top:.88rem;
     padding-bottom:1rem;
-
+    overflow-y:auto;
 `

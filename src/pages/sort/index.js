@@ -11,7 +11,6 @@ export default class Sort extends Component {
                 <Header/> 
                 <Sort_L/>
                 <Sort_R/>
-                 
             </Page>
             
         )

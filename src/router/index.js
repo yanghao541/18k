@@ -1,11 +1,13 @@
-import {Home,Nian,List,Search,Price} from "@views"
+import {Home,Listt,Search,Price} from "@views"
 
 import {
-    Sort,
     Mine,
-    Collection,
+    Sort,
+    Login,
     List2,
-    Login
+    Baoyou,
+    Details,
+    Lingquan
 } from '@pages' 
 
 
@@ -14,45 +16,53 @@ export const TabBarRoute=[
         path:"/home",
         component:Home,
         meta:{flag:true},
-        name:"首页"
+        name:"首页",
+        icon:"\ue607",
     },
     {
-        path:"/nian",
-        component:Nian,
-        meta:{flag:true,auth:true},
-        name:"9.9"
+        path:"/baoyou",
+        component:Baoyou,
+        meta:{
+            flag:true
+        },
+        name:"9.9包邮",
+        icon:"\ue662"
     },
+
     {
         path:"/sort",
         component:Sort,
         meta:{
             flag:true
         },
+       
         name:'分类',
-        icon:"\ue7f9"
+        icon:"\ue7f9",
+        
     },
-    {
-        path:"/collection",
-        component:Collection,
-        meta:{
-            flag:true
+        
+        {
+            path:"/mine",
+            component:Mine,
+            meta:{
+                flag:true
+            },
+            icon:"\ue619",
+            name:'我的',
         },
-        name:'收藏',
-        icon:"\ue60f"
-    },
-    {
-        path:"/mine",
-        component:Mine,
-        meta:{
-            flag:true
+        {
+            path:'/login',
+            component:Login,
+            meta:{
+                flge:false
+            },
+            name:"登录",
+            icon:"\ue67a",
+            
         },
-        name:'我的',
-        icon:"\ue610"
-    },
 
- 
-    
 ]
+
 export const notabBarRoute=[
     {
         path:'/list',
@@ -62,17 +72,9 @@ export const notabBarRoute=[
         },
         name:"列表"
     },
-    {
-        path:'/login',
-        component:Login,
-        meta:{
-            flge:false
-        },
-        name:"登录"
-    },
    {
-        path:"/list/:id",
-        component:List,
+        path:"/listt/:id",
+        component:Listt,
         meta:{flag:false},
         name:"详情"
     },
@@ -88,6 +90,23 @@ export const notabBarRoute=[
         meta:{flag:false},
         name:"半价"
     },  
+    {
+        path:"/details/:index",
+        component:Details,
+        meta:{
+            flag:false
+        },
+        name:"详情",
+    },
+    
+    {
+        path:"/lingquan",
+        component:Lingquan,
+        meta:{
+            flag:false
+        },
+        name:"领券",
+    }
 ]
 
 export const routeConfig=TabBarRoute.concat(notabBarRoute)

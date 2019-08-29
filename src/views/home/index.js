@@ -84,7 +84,7 @@ class Home extends Component {
         }
     }
     headlist(goodsId){
-        this.props.history.push({pathname:"/list/"+goodsId})
+        this.props.history.push({pathname:"/listt/"+goodsId})
     }
     headlsearch(){
         this.props.history.push("/search")

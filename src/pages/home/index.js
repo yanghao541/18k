@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
-export default class Collection extends Component {
+export default class Home extends Component {
     render() {
         return (
             <div>
-                Collection
+                home
             </div>
         )
     }
 }
+

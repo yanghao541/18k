@@ -24,8 +24,11 @@ module.exports = (app)=>{
     pathRewrite: {
         "^/aaa": ""
     },
+  }));
+
+  app.use(proxy("/index",{
+    target:"http://www.0quan8.com",
+    changeOrigin:true,
 }))
 
-
 };
-

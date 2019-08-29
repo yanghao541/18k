@@ -2,11 +2,6 @@
 import Loadable from 'react-loadable';
 import Loading from '../common/loading';
 
-
-const Freeshipping = Loadable({
-    loader:()=>import("./freeshipping"),
-    loading:Loading
-})
 const Sort = Loadable({
     loader:()=>import("./sort"),
     loading:Loading
@@ -19,23 +14,34 @@ const Login = Loadable({
     loader:()=>import("./login"),
     loading:Loading
 })
-const Collection = Loadable({
-    loader:()=>import("./collection"),
-    loading:Loading
-})
 const List2 = Loadable({
     loader:()=>import("./list2"),
     loading:Loading
 })
 
+const Baoyou = Loadable({
+    loader:()=>import("./baoyou"),
+    loading:Loading 
+})
+
+const Details = Loadable({
+    loader:()=>import("./details"),
+    loading:Loading 
+})
+const Lingquan = Loadable({
+    loader:()=>import("./lingquan"),
+    loading:Loading 
+})
+
+
 
 
 export {
-
     Mine,
     Sort,
     Login,
-    Freeshipping,
-    Collection,
-    List2
+    List2,
+    Baoyou,
+    Details,
+    Lingquan
 }

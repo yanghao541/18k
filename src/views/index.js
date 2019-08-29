@@ -12,8 +12,8 @@ const Nian=Loadable({
     loading:Loading
 })
 
-const List=Loadable({
-    loader:()=>import("./list"),
+const Listt=Loadable({
+    loader:()=>import("./listt"),
     loading:Loading
 })
 
@@ -25,4 +25,4 @@ const Price=Loadable({
     loader:()=>import("./price"),
     loading:Loading
 })
-export {Home,Nian,List,Search,Price}
+export {Home,Nian,Listt,Search,Price}

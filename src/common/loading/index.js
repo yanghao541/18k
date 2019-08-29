@@ -1,17 +1,26 @@
 import React, { Component } from 'react'
-import "./index.css";
-export default class Loading extends Component {
+import "./index.css"
 
-    render(){
+
+export default class componentName extends Component {
+    render() {
         return (
-            <figure>
-                <div className="dot white"></div>
-                <div className="dot"></div>
-                <div className="dot"></div>
-                <div className="dot"></div>
-                <div className="dot"></div>
-            </figure>
+            <div class="ele-container">
+  <div class="ele-wrapper">
+	<div class="ele-tail"></div>
+	<div class="ele-body">
+	  <div class="ele-head">
+		<div class="ele-eyebrows"></div>
+		<div class="ele-eyes"></div>
+		<div class="ele-mouth"></div>
+		<div class="ele-fang-front"></div>
+		<div class="ele-fang-back"></div>
+		<div class="ele-ear"></div>
+	  </div>
+	</div>
+	
+  </div>
+</div>
         )
     }
 }
-

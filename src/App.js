@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+
 import { routeConfig } from "@router"
 import { Switch, Redirect,Route} from "react-router-dom";
 import Trouter from "@common/Trouter"
+
+
 export default class App extends Component {
   render() {
     return (
       <Switch>
+
         <Redirect from="/" to="/home" exact />
         {
           routeConfig.map((item, index) => (
@@ -13,6 +17,7 @@ export default class App extends Component {
             <Trouter key={index} {...item}/>
           ))
         }
+
       </Switch>
     )
   }

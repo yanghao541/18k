@@ -13,13 +13,14 @@ ul, ol ,li{ list-style:none; }
 body { color:#333; font:12px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;}
 
 a { color:#666; text-decoration:none; }
-/*清除浮动*/
+
+
 .clear{clear:both}
 *{box-sizing:border-box}
 body,html,#root{
     height: 100%;
     overflow: hidden;
-    background: #F6F6F6;
+  
 }
 
 
