@@ -21,4 +21,12 @@ const List=Loadable({
     loading:Loading
 })
 
-export {Home,Login,Nian,List}
+const Search=Loadable({
+    loader:()=>import("./search"),
+    loading:Loading
+})
+const Price=Loadable({
+    loader:()=>import("./price"),
+    loading:Loading
+})
+export {Home,Login,Nian,List,Search,Price}

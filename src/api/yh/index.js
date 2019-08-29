@@ -21,3 +21,6 @@ http.get("/api/api/goods/get-goods-detail-img",{
     userId:669231,
     tuserId:669231,
 })
+
+export const searchdata=(kw)=>
+http.get("/app/index.php?r=index/kwarr&kw="+kw+"&token=false")

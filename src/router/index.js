@@ -1,4 +1,4 @@
-import {Home,Login,Nian,List} from "@views"
+import {Home,Login,Nian,List,Search,Price} from "@views"
 
 export const TabBarRoute=[
     {
@@ -27,8 +27,20 @@ export const notabBarRoute=[
         path:"/list/:id",
         component:List,
         meta:{flag:false},
-        name:"登录"
+        name:"详情"
     },
+    {
+        path:"/search",
+        component:Search,
+        meta:{flag:false},
+        name:"搜索"
+    },
+    {
+        path:"/price",
+        component:Price,
+        meta:{flag:false},
+        name:"半价"
+    },  
 ]
 
 

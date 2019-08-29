@@ -17,9 +17,9 @@ class Home extends Component {
             <Fragment>
                 <Tou>
                     <div>
-                        <input type="text" value="输入商品名或粘贴宝贝标题搜索" readOnly />
+                        <input type="text" defaultValue="输入商品名或粘贴宝贝标题搜索"  onClick={this.headlsearch.bind(this)} />
                     </div>
-                    <ul>
+                    <ul onClick={this.pricehead.bind(this)}>
                         <li>美食</li>
                         <li>日用</li>
                         <li>男装</li>
@@ -86,7 +86,12 @@ class Home extends Component {
     headlist(goodsId){
         this.props.history.push({pathname:"/list/"+goodsId})
     }
-
+    headlsearch(){
+        this.props.history.push("/search")
+    }
+    pricehead(){
+        this.props.history.push("/price")
+    }
 }
 
 export default connect(mapStateToProps, mapDispatch)(Home)

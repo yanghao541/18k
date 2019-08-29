@@ -1,5 +1,5 @@
 import React, { Component} from 'react'
-import {Redirect} from "react-router-dom";
+// import {Redirect} from "react-router-dom";
 export default (Abc)=>{
   return class  extends Component {
         render() {
@@ -10,7 +10,8 @@ export default (Abc)=>{
                 let token = sessionStorage.getItem("token")    
                 if(!token){
                     //如果没有登陆则跳转到登陆页面
-                    return <Redirect to="/login"/>
+                    // return <Redirect to="/login"/>
+                    return <Abc {...this.props}/>
                 }else{
                     //如果已经登陆则去相对应的页面
                     return <Abc {...this.props}/>
